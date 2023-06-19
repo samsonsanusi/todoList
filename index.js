@@ -11,7 +11,7 @@ const sam = document.getElementById("sam");
 
 
 //style
-// document.body.style.backgroundColor = '#04A1BF';
+document.body.style.backgroundColor = '#04A1BF';
 document.body.style.fontFamily = "sans-serif";
 document.body.style.display = "flex";
 document.body.style.flexDirection = "column";
