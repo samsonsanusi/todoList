@@ -1,0 +1,142 @@
+*{
+ box-sizing: border-box;
+ margin:0;
+ padding:0;
+}
+
+main{
+  text-align: center;
+}
+
+.introHeader{
+  margin: 1.875rem 0;
+}
+
+.mainIntro{
+  color: #fff;
+  text-transform: uppercase;
+  font-weight:800;
+} 
+
+.firstIntro{
+  font-size: 1rem;
+} 
+
+.secondIntro{
+  color: #51DF70;
+  font-size: 0.8125rem;
+  margin: 1rem 0;
+}
+
+.thirdIntro{
+  color: #025F70;
+  margin-bottom: 1.2rem;
+}
+
+#userInput{
+  width: 65%;
+  height:3rem;
+  border-radius:5px;
+  border: none;
+  padding-left: 0.5rem;
+}
+#addTodo{
+  height:3rem;
+  padding:0 1rem;
+  border-radius:0px 5px 5px 0;
+  background-color: #025F70;
+  transition: all 0.75s ease;
+}
+
+#addTodo:hover{
+  background-color: #02798F;
+  color: #FFCD5D;
+}
+
+ul{
+  text-align:left;
+  margin-top:1.25rem;
+}
+
+li{
+  padding: 0.625rem 1.25rem;
+  color: #fff;
+  text-transform: capitalize;
+  font-weight: 600;
+  border-radius: 5px;
+	margin-bottom: 10px;
+	background: #4EB9CD;
+  transition: all 0.75s ease;
+  list-style-type: none;
+
+}
+
+li:hover{
+  background-color: #76CFE0;
+}
+
+li > button{
+  font-weight: normal;
+	background: none;
+	border: none;
+	float: right;
+	color: #025f70;
+	font-weight: 800;
+}
+
+input {
+	border-radius: 5px;
+	min-width: 65%;
+	padding: 5px;
+	border: none;
+}
+
+.done{
+  background: #51DF70 !important;
+	color: #00891E;
+}
+
+.delete{
+  display: none;
+}
+
+@media only screen and (max-width: 600px){
+  body{
+    padding: 0 1rem;
+  }
+  #userInput{
+    width:70%;
+    height:2rem;
+  }
+  #addTodo{
+    height:2rem;
+    padding: 0 0.4rem;
+  }
+  .introHeader{
+    margin: 0.885rem 0;
+  }
+  .secondIntro{
+    font-size: 1.1rem;
+  }
+}
+
+@media only screen and (min-width: 600px){
+  #userInput{
+    width: 70%;
+    height: 3.5rem;
+    font-size: 1rem;
+  }
+  .firstIntro{
+    font-size: 1.2rem;
+  }
+  #addTodo{
+    height: 3.5rem;
+    padding: 0 1rem;
+    
+  }
+  .thirdIntro{
+    color: #025F70;
+    margin-bottom: 1.2rem;
+    font-size: 1.1rem;
+  }
+}
