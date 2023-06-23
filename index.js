@@ -7,18 +7,7 @@ const response = document.querySelector(".response")
 const mainContainer = document.getElementById('mainContainer')
 const firstIntro = document.querySelector('.firstIntro');
 const secondIntro = document.querySelector('secondIntro')
-const sam = document.getElementById("sam");
 
-
-//style
-document.body.style.backgroundColor = '#04A1BF';
-document.body.style.fontFamily = "sans-serif";
-document.body.style.display = "flex";
-document.body.style.flexDirection = "column";
-document.body.style.justifyContent = "center";
-document.body.style.alignContent = "center"
-document.body.style.height = "100vh"
-// firstIntro.style.color = '#FFCD5D'
 
 //check for the length of the value entered
 const inputLength = () =>{
@@ -26,9 +15,9 @@ const inputLength = () =>{
 }
 
 //checks for the list of items
-const listLength = () =>{
-  return item.length;
-}
+// const listLength = () =>{
+//   return item.length;
+// }
 
 //create li in ul element 
 const createLisElement = () =>{
@@ -54,17 +43,13 @@ const createLisElement = () =>{
   }
   dBtn.addEventListener('click', deleteItem)
   // End add Delete Button
-
-  //Add class Delete (Display: none)
-  
-  //End Add class Delete
 }
 
 const addListAfterClick = () =>{
   if (inputLength() > 0) {
      createLisElement();
-  }else if (inputLength() === "") {
-    alert("Enter valid Item")
+  }else if (inputLength() === ""){
+      alert("Enter valid Item")
   }
 }
 //this checks if you click the Enter button
@@ -78,5 +63,4 @@ addTodo.addEventListener('click', addListAfterClick);
 
 userInput.addEventListener('keypress', addListAfterKeyPress);
 
-
-
+localStorage.setItem('keyName', inputLength)
